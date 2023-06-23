@@ -12,7 +12,6 @@ public class RewardPointsController {
 
     @PostMapping("/calculate")
     public Map<String, Map<String, Long>> calculateRewardPoints(@RequestBody Map<String, Map<String, List<Double>>> transactions) {
-    	System.out.println("Test###########");
         return calculateRewardPointsForThreeMonths(transactions);
     }
 
